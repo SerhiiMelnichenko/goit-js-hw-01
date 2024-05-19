@@ -1,12 +1,11 @@
 function getElementWidth(content, padding, border) {
-   // переведення  рядка в число
-    content = Number(content)
-    padding = Number(padding)
-    border = Number(border)
-    // обчислення
-    const result =` content + ${padding * 2} + ${border * 2}`
-    // округлення
-    return Number(result.toFixed(1))
+   // взяти тільки  числа  з значень
+  const contentWidth = parseFloat(content)
+  const paddingWidth = parseFloat(padding)
+    const borderWidth = parseFloat(border)
+    //обчислення= ширена+ падінг*2+рамка*2
+  return contentWidth + paddingWidth * 2 + borderWidth * 2
+
 }
 
 
