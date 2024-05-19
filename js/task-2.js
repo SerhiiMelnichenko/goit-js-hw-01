@@ -1,5 +1,5 @@
 function getShippingMessage(country, price, deliveryFree) {
-    return `"Shipping to ${country} will cost ${price}+${deliveryFree} credits"`
+    return `"Shipping to ${country} will cost ${price+deliveryFree} credits"`
 }
 
 console.log(getShippingMessage("Australia", 120, 50)) // "Shipping to Australia will cost 170 credits"

@@ -1,11 +1,8 @@
 
-function makeTransaction(quantity, totalPrice) {
-   totalPrice = quantity * pricePerDroid
-}
 
-function makeTransaction(quantity, totalPrice) {
-    console.log (
-        return `You ordered ${quantity} droids worth ${totalPrice} credits!`);
+function makeTransaction(quantity, pricePerDroid, totalPrice) {
+    
+        return `"You ordered ${quantity} droids worth ${quantity*pricePerDroid} credits!"`
 }
 
 console.log(makeTransaction(5, 3000)) // "You ordered 5 droids worth 15000 credits!"
